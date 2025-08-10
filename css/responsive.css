@@ -72,7 +72,10 @@
     }
 }
 @media all and (max-width:590px) {
-    #row-1 > li, #row-2 > li {
+    #row-1 > li {
+        height: 28rem;
+    }
+    #row-2 > li {
         height: 29rem;
     }
     #row-2 .back-inner {
@@ -89,7 +92,21 @@
 
 /* 모바일 */
 @media all and (max-width:479px) {
-    
+    #mo-top-txt {
+        font-size: 1.7rem;
+    }
+    #mo-top-txt strong {
+        font-size: 1.8rem;
+    }
+    #border-cont * {
+        font-size: 1.5rem;
+    }
+    #row-1 > li {
+        height: 26rem;
+    }
+    #row-1 .back-inner {
+        padding: 53% 1rem 0;
+    }
     #row-1 .back-inner ul li, #row-2 .back-inner ul li {
         line-height: 1.3;
     }
@@ -107,8 +124,14 @@
     #team-txt {
         width: 50%;
     }
+    #row-1 > li {
+        height: 26rem;
+    }
+    /* #row-1 .back-inner {
+        padding: 55% 1rem 0;
+    } */
     #row-2 > li {
-        height: 30rem;
+        height: 28rem;
     }
     #row-1 .back-inner ul li span {
         display: inline;

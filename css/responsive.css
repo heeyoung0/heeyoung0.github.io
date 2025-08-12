@@ -602,6 +602,243 @@
     #row-2 .back-inner {
         padding: 70% 1rem 0;
     }
+    #scnd-tabs-mo li {
+        font-size: 1.4rem;
+    }
+    #scnd-tab-list li {
+        width: 100%;
+    }
+    #scnd-tab-list li:nth-child(2) {
+        display: none;
+    }
+    #five-tit {
+        font-size: 2rem;
+    }
+    #five-tit strong {
+        font-size: 2rem;
+    }
+    #five-sub-tit {
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+    }
+    #five-phls-list li:nth-child(n+2) {
+        width: calc(50% - .3rem);
+    }
+    #five-phls-list li a p {
+        font-size: 1.3rem;
+    }
+    #jipi-big-txt, #yeok-big-txt, #jeokjae-big-txt, #jeolcha-big-txt, #yubi-big-txt {
+        font-size: 4rem;
+        padding-top: 8rem;
+    }
+    #jipi-ko-txt, #yeok-ko-txt, #jeokjae-ko-txt, #jeolcha-ko-txt, #yubi-ko-txt {
+        font-size: 2.5rem;
+        margin-top: -1.5rem;
+    }
+    #jipi-mean, #yeok-mean, #jeokjae-mean, #jeolcha-mean, #yubi-mean {
+        font-size: 1.7rem;
+        line-height: 1.4;
+        padding-bottom: 4rem;
+    }
+    #jipi-cont li:nth-child(n+2) {
+        margin-bottom: 0;
+    }
+    #jipi-cont li pre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+    #jipi-cont li b {
+        font-size: 1.5rem;
+    }
+    #jipi-cont li span {
+        font-size: 1.3rem;
+    }
+    #jipi-img-2 {
+        width: 100%;
+    }
+    #yeok-sec > pre, #jeokjae-sec > pre, #jeolcha-sec > pre {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        padding: 0 1.5rem;
+    }
+    #yeok-sec > pre span, #jeolcha-sec > pre span {
+        font-size: 1.5rem;
+    }
+    #yeok-main-tit, #jeokjae-main-tit, #jeolcha-main-tit, #yubi-main-tit {
+        font-size: 1.7rem;
+        line-height: 1.5;
+    }
+    #yubi-main-tit span {
+        font-size: 1.7rem;
+    }
+    #yeok-point-txt, #jeokjae-point-txt, #jeolcha-point-txt, #yubi-point-txt {
+        font-size: 1.5rem;
+    }
+    #yeok-highlight-txt, #jeokjae-highlight-txt, #jeolcha-highlight-txt, #yubi-highlight-txt {
+        font-size: 1.5rem;
+    }
+    #jeokjae-sec {
+        padding: 0;
+    }
+    #jeokjae-txt {
+        padding: 0 1.5rem;
+    }
+    #jeokjae-step-info {
+        padding: 3rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    #jeokjae-step-info span {
+        font-size: 1.5rem;
+    }
+    #jeokjae-step-list li {
+        height: 18rem;
+    }
+    #jeokjae-step-list li div.num {
+        width: 55%;
+        padding: 2rem 1rem;
+    }
+    #jeokjae-step-list li div.num span {
+        font-size: 6rem;
+    }
+    #jeokjae-step-list li div.num p {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+    #jeokjae-step-list li div.num pre {
+        font-size: 1.3rem;
+        word-break: break-all;
+    }
+    #jeokjae-step-list li .step-img {
+        width: 45%;
+    }
+    #jeokjae-step-list li .step-img p {
+        font-size: 1.2rem;
+    }
+    #mo-last div {
+        width: 55% !important;
+    }
+    #mo-last p {
+        font-size: 1.3rem;
+    }
+    #mo-last p span {
+        font-size: 1.3rem;
+        word-break: break-all;
+    }
+    #comment-red {
+        margin: 2rem 0 3rem;
+        font-size: 1.4rem;
+        padding: 1.5rem 1rem;
+    }
+    #lawyer-comm {
+        padding: 0 0 4rem;
+    }
+    #comment-list {
+        padding: 0 1.5rem;
+    }
+    #comment-list li p {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    #comment-list li p b {
+        font-size: 1.6rem;
+    }
+    #comment-list li pre {
+        font-size: 1.4rem;
+    }
+    #blue-sec ul li h4 {
+        font-size: 2rem;
+    }
+    #blue-sec ul li span {
+        font-size: 1.4rem;
+    }
+    #blue-sec ul li p {
+        font-size: 1.4rem;
+        padding: 1rem 0;
+    }
+    #mo-long-media-area img {
+        width: 100%;
+    }
+    #media-sec ul li {
+        width: calc(50% - .2rem);
+        margin-bottom: .4rem;
+    }
+    #media-sec ul li a .top {
+        padding: 2rem 1rem;
+    }
+    #media-sec ul li a i {
+        font-size: 1.3rem;
+    }
+    #media-sec ul li a p {
+        font-size: 1.6rem;
+    }
+    #media-sec ul li a span {
+        font-size: 1.3rem;
+    }
+    #mo-media-more {
+        padding: 2rem 0;
+    }
+    #mo-media-more a {
+        font-size: 1.6rem;
+    }
+    #lawyer-process ul li a div {
+        padding: 2rem 1.5rem;
+    }
+    #lawyer-process ul li a div span {
+        font-size: 1.5rem;
+    }
+    #lawyer-process ul li a div p {
+        font-size: 1.5rem;
+    }
+    #lawyer-process ul li a pre.mo {
+        font-size: 1.4rem;
+    }
+    #anl_more {
+        margin: 6rem 0;
+    }
+    #anl_more h4 {
+        font-size: 2.3rem;
+    }
+    #anl_more p {
+        font-size: 1.5rem;
+    }
+    #anl_more a, #six-center-more a {
+        padding: 2rem 0;
+    }
+    #six-center-sec ul li {
+        padding: 1.5rem;
+    }
+    #six-center-sec ul li img {
+        display: block;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    #six-center-sec ul li h5 {
+        font-weight: 500;
+        font-size: 1.5rem;
+        word-break: break-all;
+    }
+    #six-center-sec ul li p {
+        font-size: 1.5rem;
+    }
+    #six-center-sec ul li pre {
+        font-size: 1.4rem;
+    }
+    #six-center-sec ul li span {
+        font-size: 1.4rem;
+    }
+    #six-center-sec ul li span b {
+        font-size: 1.4rem;
+    }
+    #discri-sec #mo-cont {
+        font-size: 1.5rem;
+    }
+    #cs-area p {
+        font-size: 1.4rem;
+    }
+    #cs-area p span {
+        font-size: 1.4rem;
+    }
 }
 @media all and (max-width:398px) {
     #team-txt {

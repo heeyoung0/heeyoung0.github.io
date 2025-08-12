@@ -12,7 +12,7 @@ html, body {margin: 0; padding: 0;}
 h1, h2, h3, h4, h5, h6, p, a, span, em, strong, del, s, b, blockquote, br, i, u, dl, dt, dd, table, tr, thead, tbody, tfoot, th, td, img, object, form, fieldset, label, input, textarea, select, option, button, header, main, section, aside, footer, nav, article, div, ol, ul, li, pre {
     padding: 0; margin: 0; 
     font-family: 'font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;', sans-serif;
-    letter-spacing: -0.01rem; line-height: 1; font-weight: normal; font-size: 1rem; color:#fff; box-sizing: border-box; word-break: keep-all;
+    letter-spacing: -0.01rem; line-height: 1; font-weight: normal; font-size: 1rem; color:#111; box-sizing: border-box; word-break: keep-all;
 }
 
 
@@ -23,7 +23,7 @@ a, del, s, u {text-decoration: none;}
 em, i {font-style: normal}
 ol, ul, li {list-style: none;}
 table, tr, td {border-collapse: unset;}
-input {border:0; -webkit-appearance: none; -moz-appearance: none; appearance: none; caret-color: #fff;}
+input {border:0; -webkit-appearance: none; -moz-appearance: none; appearance: none; caret-color: #111;}
 input,textarea {caret-color: #302e2c;}
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {-webkit-appearance: none; -moz-appearance: none; appearance: none;}

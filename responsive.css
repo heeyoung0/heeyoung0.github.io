@@ -1,0 +1,620 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --maxWidth: 1400px;
+    --colorOra: #e5b057;
+    --colorMo: #cbb795;
+}
+@media all and (max-width: 1344px) {
+    /* 다섯가지 철학 */
+    #five-phls-list li {
+        width: calc(100% / 5 - 1px);
+    }
+    #five-phls-list li a h3 {
+        font-size: 27px;
+    }
+}
+@media all and (max-width:1290px) {
+    #jipi-cont li #jipi-img-1 {
+        bottom: -60px;
+    }
+}
+@media all and (max-width:1155px) {
+    /* 변호사 리스트 */
+    #lawyer-cont {
+        padding: 15px;
+    }
+    #lawyer-name {
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    #lawyer-cont ul li {
+        font-size: 13px;
+    }
+
+    /* 다섯가지 철학 */
+    #five-phls-list li a h3 {
+        font-size: 25px;
+    }
+    #five-phls-list li a p {
+        font-size: 15px;
+    }
+    #jipi-cont li {
+        font-size: 16px;
+    }
+    #jipi-cont li pre {
+        font-size: 16px;
+    }
+    #jipi-cont li b {
+        font-size: 16px;
+    }
+    #jipi-cont li #jipi-img-1 {
+        bottom: -80px;
+    }
+}
+
+/* 태블릿 가로 */
+@media all and (max-width:1024px) {
+    #top-sec {
+        padding: 130px 15px 0;
+    }
+    #top-txt, #top-txt strong {
+        font-size: 24px;
+    }
+    #pc-lawyer-list > li {
+        width: calc(100% / 5 - 10px);
+        height: 370px;
+    }
+    #lawyer-cont {
+        padding: 10px;
+        height: 217px;
+    }
+    #lawyer-cont #lawyer-name {
+        font-size: 15px;
+    }
+    #lawyer-cont ul li {
+        font-size: 12px;
+    }
+    
+    #scnd-tabs {
+        display: none;
+    }
+    #scnd-tabs-mo {
+        display: flex;
+    }
+    #success-all-btn {
+        display: none;
+    }
+    #success-all-btn-mo {
+        display: block;
+    }
+    #scnd-tab-list li a {
+        padding: 15px;
+    }
+    #scnd-tab-list li a p {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+    #scnd-tab-list li a pre {
+        font-size: 15px;
+    }
+    #scnd-tab-list li a div img {
+        width: 50px; height: 50px;
+    }
+    #five-tit {
+        font-size: 27px;
+        line-height: 1.5;
+    }
+    #five-tit strong {
+        font-size: 27px;
+    }
+    #five-sub-tit {
+        margin-bottom: 50px;
+    }
+    #five-phls-list {
+        flex-wrap: wrap;
+    }
+    #five-phls-list li {
+        margin-bottom: 40px;
+    }
+    #five-phls-list li:first-child {
+        width: 100%;
+    }
+    #five-phls-list li:nth-child(n+2) {
+        width: calc(50% - 5px);
+    }
+    #five-phls-list li a h3 {
+        font-size: 30px;
+    }
+    #five-phls-list li a p {
+        font-size: 17px;
+    }
+    #jipi-sec {
+        margin-top: -70px;
+        height: auto;
+    }
+    #jipi-cont {
+        max-width: 700px;
+        flex-direction: column;
+    }
+    #jipi-cont li {
+        width: 100%;
+    }
+    #jipi-cont li.position {
+        display: none;
+    }
+    #jipi-big-txt, #yeok-big-txt, #jeokjae-big-txt, #jeolcha-big-txt, #yubi-big-txt {
+        font-size: 60px;
+        padding-top: 110px;
+    }
+    #jipi-ko-txt, #yeok-ko-txt, #jeokjae-ko-txt, #jeolcha-ko-txt, #yubi-ko-txt {
+        font-size: 35px;
+    }
+    #jipi-mean, #yeok-mean, #jeokjae-mean, #jeolcha-mean, #yubi-mean {
+        font-size: 20px;
+        padding-bottom: 60px;
+    }
+    #jipi-cont li #jipi-img-1 {
+        display: none;
+    }
+    #jipi-img-2 {
+        display: inline-block;
+        width: 50%;
+    }
+    #yeok-sec > pre, #jeokjae-sec > pre, #jeolcha-sec > pre {
+        font-size: 16px;
+    }
+    #yeok-sec > pre span, #jeolcha-sec > pre span {
+        font-size: 16px;
+    }
+    #yeok-main-tit, #jeokjae-main-tit, #jeolcha-main-tit, #yubi-main-tit {
+        font-size: 20px;
+        max-width: 700px;
+        margin: 0 auto 30px;
+    }
+    #yeok-point-txt, #jeokjae-point-txt, #jeolcha-point-txt, #yubi-point-txt {
+        font-size: 16px;
+        max-width: 700px;
+        margin: 0 auto 30px;
+    }
+    #yeok-highlight-txt, #jeokjae-highlight-txt, #jeolcha-highlight-txt, #yubi-highlight-txt {
+        font-size: 16px;
+    }
+    #jeokjae-step-tit {
+        font-size: 21px;
+    }
+    #jeokjae-step-info {
+        font-size: 16px;
+    }
+    #jeokjae-step-info span {
+        font-size: 16px;
+    }
+
+    #jeokjae-step-list {
+        flex-direction: column;
+        max-width: 700px;
+        gap: 3px;
+    }
+    #jeokjae-step-list li {
+        width: 100%;
+        display: flex;
+        height: 205px;
+    }
+    #jeokjae-step-list li div {
+        width: 50%;
+    }
+    #jeokjae-step-list li div.num span {
+        font-size: 80px;
+        left: 0;
+    }
+    #jeokjae-step-list li div.num p {
+        padding: 35px 0 10px;
+        font-size: 18px;
+    }
+    #jeokjae-step-list li div.num pre {
+        font-size: 15px;
+    }
+    #jeokjae-step-list li .step-img p {
+        font-size: 14px;
+    }
+    #jeokjae-step-list li .step-img {
+        height: 100%;
+    }
+    #jeokjae-step-list li#seven,
+    #jeokjae-step-list li#eight {
+        display: none;
+    }
+    #mo-last {
+        display: flex;
+    }
+
+    #lawyer-comm {
+        background: #f4f4f4;
+        margin: 0 auto;
+        padding: 120px 15px 40px;
+    }
+    #lawyer-comm-wrap {
+        max-width: 700px;
+        background: none;
+    }
+    #comment-red {
+        font-size: 16px;
+    }
+    #comment-list li p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    #comment-list li p b {
+        font-size: 18px;
+    }
+    #comment-list li pre {
+        font-size: 15px;
+    }
+    #lawyer-comm-wrap > div {
+        display: block;
+    }
+    #blue-sec {
+        background-color: #fff;
+        height: auto;
+        border-top: 1px solid #333;
+    }
+    #blue-sec ul {
+        max-width: 700px;
+        background: none;
+        padding: 70px 0;
+        justify-content: center
+    }
+    #blue-sec ul li h4 {
+        color: #01419a;
+        font-size: 25px;
+    }
+    #blue-sec ul li span {
+        color: #01419a;
+        font-size: 16px;
+    }
+    #blue-sec ul li p {
+        color: #01419a;
+        border-color: #01419a;
+        font-size: 16px;
+    }
+    #long-media-area {
+        display: none;
+    }
+    #mo-long-media-area {
+        display: flex;
+    }
+    #mo-long-media-area img {
+        display: block;
+        width: 70%;
+    }
+    #media-sec {
+        padding: 20px 0 0;
+    }
+    #media-sec ul {
+        flex-wrap: wrap;
+    }
+    #media-sec ul li {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+    }
+    #media-more {
+        display: none;
+    }
+    #mo-media-more {
+        display: block;
+    }
+
+    #jeolcha-sec {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    #lawyer-process ul li {
+        width: 100%;
+        height: auto;
+    }
+    #lawyer-process ul li a div {
+        padding: 20px;
+        border-radius: 5px;
+        border-right: none;
+    }
+    #lawyer-process ul li a div span {
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    #lawyer-process ul li a div p {
+        display: inline-block;
+        font-size: 17px;
+    }
+    #lawyer-process ul li a pre {
+        display: none;
+    }
+    #lawyer-process ul li a pre.mo {
+        display: block;
+    }
+    #anl_more h4 {
+        font-size: 27px;
+    }
+    #anl_more p {
+        font-size: 17px;
+    }
+    #anl_more a, #six-center-more a {
+        font-size: 16px;
+        width: 100%;
+    }
+    #anl_more a span, #six-center-more a span {
+        font-size: 17px;
+    }
+    #six-center-sec ul {
+        margin: 0 auto 20px;
+    }
+    #six-center-sec ul li {
+        flex-direction: column-reverse;
+    }
+    #six-center-sec ul li div {
+        width: 100%;
+    }
+    #six-center-sec ul li h5 {
+        font-size: 20px;
+    }
+    #six-center-sec ul li p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    #six-center-sec ul li pre {
+        font-size: 15px;
+    }
+    #six-center-sec ul li span {
+        font-size: 15px;
+    }
+    #six-center-sec ul li img {
+        display: none;
+    }
+    #red-banner h5 {
+        font-size: 25px;
+    }
+    #red-banner p {
+        font-size: 18px;
+    }
+    #discri-sec {
+        padding: 40px 15px;
+    }
+    #discri-sec ul {
+        display: none;
+    }
+    #discri-sec > h5 {
+        font-size: 25px;
+    }
+    #discri-sec > p {
+        font-size: 18px;
+    }
+    #discri-sec #pc-cont {
+        display: none;
+    }
+    #discri-sec #mo-cont {
+        display: block;
+    }
+    #swiper-wrap {
+        display: block;
+    }
+    #cs-area {
+        display: block;
+    }
+} 
+
+/* 모바일 가로, 태블릿 세로 */
+@media all and (max-width:767px) {
+    #top-sec {
+        padding: 130px 0 0;
+    }
+    #top-txt {
+        display: none;
+    }
+    #mo-top-txt {
+        display: block;
+    }
+    #border-cont {
+        border: none;
+    }
+    #border-cont * {
+        font-size: 1.6rem;
+    }
+    #border-cont strong {
+        color: var(--colorMo);
+    }
+    #pc-lawyer-list {
+        display: none;
+    }
+    #mo-lawyer {
+        display: block;
+    }
+
+    #scnd-sec {
+        padding: 10rem 1.5rem;
+    }
+    #scnd-tit {
+        font-size: 2.5rem;
+    }
+    #scnd-tit b, #scnd-tit span {
+        font-size: 2.5rem;
+    }
+    #scnd-sub-tit {
+        font-size: 1.8rem;
+    }
+    #scnd-tabs-mo {
+        margin-bottom: 1rem;
+    }
+    #scnd-tab-list li {
+        width: calc(50% - .5rem);
+    }
+    #scnd-tab-list li:last-child {
+        display: none;
+    }
+    #scnd-tab-list li a p {
+        font-size: 1.8rem;
+    }
+    #success-all-btn-mo {
+        margin-top: 1rem;
+    }
+    #five-tit {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    #five-tit strong {
+        font-size: 2.5rem;
+    }
+    #five-sub-tit {
+        margin-bottom: 7rem;
+    }
+    #five-phls-list li a p {
+        font-size: 1.6rem;
+    }
+    #yeok-point-txt, #jeokjae-point-txt, #jeolcha-point-txt, #yubi-point-txt {
+        padding: 0 1.5rem;
+    }
+    #jeokjae-step-tit {
+        font-size: 1.8rem;
+    }
+    #jeokjae-step-list li .step-img p {
+        font-size: 1.3rem;
+    }
+    #jeokjae-step-list li div.num {
+        padding: 2rem 1.5rem;
+        height: auto;
+    }
+    #lawyer-comm {
+        padding: 0 1.5rem 4rem;
+    }
+    #comment-red {
+        width: 100%;
+        text-align: center;
+        background: #797979;
+    }
+    #media-sec {
+        padding: 0;
+    }
+    #yeok-sec > div, #jeokjae-sec > div, #jeolcha-sec > div, #yubi-sec > div {
+        padding: 0 1.5rem 3rem;
+    }
+    #yeok-sec > pre, #jeokjae-sec > pre, #jeolcha-sec > pre {
+        text-decoration: none;
+    }
+    #yeok-main-tit, #jeokjae-main-tit, #jeolcha-main-tit, #yubi-main-tit {
+        font-size: 1.8rem;
+        padding: 0 1.5rem;
+        line-height: 1.4;
+    }
+    #yubi-main-tit span {
+        font-size: 1.8rem;
+    }
+    #lawyer-process ul li a pre.mo {
+        padding: 1.5rem 1rem;
+    }
+    #anl_more {
+        margin: 9rem 0;
+    }
+    #yeok-highlight-txt, #jeokjae-highlight-txt, #jeolcha-highlight-txt, #yubi-highlight-txt {
+        background-image: linear-gradient(transparent calc(100% - 30px), transparent 10px);
+    }
+    #six-center-sec ul li h5 {
+        font-size: 1.8rem;
+    }
+    #six-center-sec ul li p {
+        font-size: 1.6rem;
+    }
+    #six-center-sec ul li pre {
+        text-decoration: none;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+    #six-center-sec ul li span {
+        font-size: 1.5rem;
+    }
+    #six-center-sec ul li span b {
+        font-size: 1.5rem;
+    }
+    #six-center-more {
+        padding-bottom: 8rem;
+    }
+    #red-banner {
+        display: none;
+    }
+    #discri-sec {
+        padding: 6rem 1.5rem;
+    }
+    #discri-sec > h5 {
+        font-size: 2.1rem;
+    }
+}
+@media all and (max-width:590px) {
+    #row-1 > li {
+        height: 28rem;
+    }
+    #row-2 > li {
+        height: 29rem;
+    }
+    #row-2 .back-inner {
+        padding: 60% 1rem 0;
+    }
+    #row-1 .back-inner p, #row-2 .back-inner p {
+        font-size: 1.5rem;
+    }
+    #row-1 .back-inner ul li, #row-2 .back-inner ul li,
+    #row-1 .back-inner ul li span, #row-2 .back-inner ul li b {
+        font-size: 1.2rem;
+    }
+
+    #cs-area {
+        height: 40rem;
+        background-size: 85%;
+    }
+}
+
+/* 모바일 */
+@media all and (max-width:479px) {
+    #mo-top-txt {
+        font-size: 1.7rem;
+    }
+    #mo-top-txt strong {
+        font-size: 1.8rem;
+    }
+    #border-cont * {
+        font-size: 1.5rem;
+    }
+    #row-1 > li {
+        height: 26rem;
+    }
+    #row-1 .back-inner {
+        padding: 53% 1rem 0;
+    }
+    #row-1 .back-inner ul li, #row-2 .back-inner ul li {
+        line-height: 1.3;
+    }
+    #row-1 .back-inner p, #row-2 .back-inner p {
+        font-size: 1.3rem;
+    }
+    #row-2 > li {
+        height: 27rem;
+    }
+    #row-2 .back-inner {
+        padding: 70% 1rem 0;
+    }
+}
+@media all and (max-width:398px) {
+    #team-txt {
+        width: 50%;
+    }
+    #row-1 > li {
+        height: 26rem;
+    }
+    #row-2 > li {
+        height: 28rem;
+    }
+    #row-1 .back-inner ul li span {
+        display: inline;
+        word-break: break-all;
+    }
+}

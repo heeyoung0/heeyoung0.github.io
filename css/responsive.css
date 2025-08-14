@@ -52,6 +52,20 @@
     #jipi-cont li #jipi-img-1 {
         bottom: -80px;
     }
+    #discri-sec ul li {
+        padding: 25px 15px 0;
+    }
+    #discri-sec ul li h6 {
+        font-size: 19px;
+        word-break: break-all;
+    }
+    #discri-sec ul li h6 span {
+        font-size: 19px;
+        word-break: break-all;
+    }
+    #discri-sec ul li pre, #discri-sec ul li pre b {
+        font-size: 15px;
+    }
 }
 
 /* 태블릿 가로 */
@@ -570,6 +584,9 @@
     #cs-area {
         height: 40rem;
         background-size: 85%;
+    }
+    #mo-video {
+        display: block;
     }
 }
 

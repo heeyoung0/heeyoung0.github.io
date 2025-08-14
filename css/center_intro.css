@@ -1,0 +1,474 @@
+/* 공통요소 */
+* {
+    box-sizing: border-box;
+}
+:root {
+    --maxWidth: 1400px;
+    --colorOra: #e5b057;
+    --colorMo: #cbb795;
+    --colorRed: #bd1a03;
+    --myeongjo : "Nanum Myeongjo", serif;
+    --pointColor: #955d17;
+    --moWidth: 700px;
+}
+main {
+    padding: 0 15px;
+}
+
+/* intro-header */
+#intro-header {
+    background: url(../img/intro-header-img.jpg) no-repeat center/cover;
+    padding: 0 15px; height: 300px;
+}
+#intro-header h1 {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* six-center-desc */
+#six-center-desc {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding: 70px 0;
+}
+#six-center-tit {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+#six-center-tit strong {
+    font-size: 35px;
+    color: var(--colorRed);
+}
+#six-center-desc > p {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#six-center-desc > p b {
+    font-size: 19px;
+    color: var(--colorRed);
+    font-weight: 500;
+}
+#six-box-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #a8b5c4;
+    padding: 40px 0;
+}
+#six-box-cont li {
+    width: 50%;
+    padding: 0 15px;
+    line-height: 1.9;
+    font-size: 19px;
+    font-weight: 500;
+}
+#six-box-cont li:first-child {
+    text-align: center;
+}
+#six-box-cont li p {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+#six-box-cont li h2 {
+    font-family: var(--myeongjo);
+    font-size: 32px;
+    color: var(--colorRed);
+    font-weight: 600;
+}
+#six-box-cont li b {
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--colorRed);
+}
+
+/* number-cont */
+#number-cont {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding: 60px 0 100px;
+}
+#number-cont > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+#num-main-tit {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: var(--myeongjo);
+    width: fit-content;
+    background: linear-gradient(to bottom, transparent 0 50%, #ecdfc8 0);
+    margin-bottom: 15px;
+}
+#mo-num-main-tit {
+    display: none;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#mo-num-main-tit span {
+    font-size: 25px;
+    line-height: 1.5;
+    background: linear-gradient(to bottom, transparent 0 50%, #ecdfc8 0);
+    text-align: center;
+    font-weight: 600;
+    font-family: var(--myeongjo);
+}
+#number-cont > div p {
+    font-size: 20px;
+}
+
+/* num-list */
+#num-list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+#num-list li {
+    display: flex;
+    justify-content: space-between;
+}
+#num-list li div {
+    width: 55%;
+}
+#num-list li #img-sec-1, #num-list li #img-sec-2, #num-list li #img-sec-3, #num-list li #img-sec-4, #num-list li #img-sec-5, #num-list li #img-sec-6 {
+    width: 40%;
+    position: relative;
+}
+#num-list li img {
+    width: 100%;
+}
+#num-list li div div {
+    border: 1px solid #bd1a03;
+    width: 100%;
+    padding: 25px 20px;
+    margin-bottom: 40px;
+}
+#num-list li div div p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+#num-list li div div h3 {
+    font-size: 24px;
+    color: var(--colorRed);
+    font-weight: 500;
+}
+#num-list li div strong {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    background: linear-gradient(to bottom, transparent 0 0%, #ecdfc8 0);
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+#num-list li div p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+#num-list li div p span {
+    font-size: 15px;
+}
+#num-list li div pre {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+#num-list li div pre span {
+    color: #666;
+    font-size: 13px;
+}
+#num-list li div pre b {
+    display: inline-block;
+    padding-right: 15px;
+}
+#num-list li #img-sec-1 div, #num-list li #img-sec-2 div, #num-list li #img-sec-3 div, #num-list li #img-sec-4 div, #num-list li #img-sec-5 div, #num-list li #img-sec-6 div {
+    border: none;
+    padding: 55px 15px 20px;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+    font-size: 15px;
+    color: #fff;
+    background: #bd1a03;
+    width: fit-content;
+    box-shadow: 5px 5px 16px 0px #888;
+}
+#num-list li #img-sec-1 div p, #num-list li #img-sec-2 div p, #num-list li #img-sec-3 div p, #num-list li #img-sec-4 div p, #num-list li #img-sec-5 div p, #num-list li #img-sec-6 div p {
+    color: #fff;
+    font-size: 18px;
+}
+#num-list li #img-sec-1 div span, #num-list li #img-sec-2 div span, #num-list li #img-sec-3 div span, #num-list li #img-sec-4 div span, #num-list li #img-sec-5 div span, #num-list li #img-sec-6 div span {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+}
+#num-list li i {
+    position: absolute;
+    top: 10px; right: 10px;
+    display: block;
+    width: 30px; height: 30px;
+    background: url(../img/s-logo.png) no-repeat center/contain;
+}
+
+
+/* 반응형 */
+@media all and (max-width: 1344px) {
+
+}
+
+@media all and (max-width:1290px) {
+    #intro-header {
+        height: 250px;
+    }
+    #six-center-tit,#six-center-tit strong {
+        font-size: 30px;
+    }
+    #six-center-desc > p,
+    #six-center-desc > p b {
+        font-size: 18px;
+    }
+    #six-box-cont li, #six-box-cont li b {
+        font-size: 18px;
+    }
+    #num-main-tit {
+        font-size: 30px;
+    }
+    #number-cont > div p {
+        font-size: 18px;
+    }
+    #num-list li div div {
+        padding: 20px 15px;
+        margin-bottom: 25px;
+    }
+    #num-list li div div p {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+    #num-list li div div h3 {
+        font-size: 22px;
+    }
+    #num-list li div strong {
+        margin-bottom: 25px;
+    }
+    #num-list li div p {
+        font-size: 17px;
+        line-height: 1.5;
+        word-break: break-all;
+    }
+    #num-list li div pre {
+        font-size: 15px;
+    }
+    #num-list li #img-sec-1 div p, #num-list li #img-sec-2 div p, #num-list li #img-sec-3 div p, #num-list li #img-sec-4 div p, #num-list li #img-sec-5 div p, #num-list li #img-sec-6 div p {
+        font-size: 17px;
+    }
+    #num-list li #img-sec-1 div span, #num-list li #img-sec-2 div span, #num-list li #img-sec-3 div span, #num-list li #img-sec-4 div span, #num-list li #img-sec-5 div span, #num-list li #img-sec-6 div span {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width:1155px) {
+
+}
+
+@media all and (max-width:1024px) {
+    #intro-header {
+        height: 200px;
+    }
+    #intro-header h1 {
+        font-size: 29px;
+    }
+    #six-center-desc {
+        padding: 110px 0 70px;
+    }
+    #six-center-tit, #six-center-tit strong {
+        font-size: 27px;
+    }
+    #six-center-desc > p,
+    #six-center-desc > p b {
+        font-size: 17px;
+    }
+    #six-box-cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 30px 0;
+    }
+    #six-box-cont li {
+        width: auto;
+        padding: 0;
+    }
+    #six-box-cont li p {
+        font-size: 18px;
+    }
+    #six-box-cont li h2 {
+        font-size: 29px;
+    }
+    #six-box-cont li, #six-box-cont li b {
+        font-size: 17px;
+    }
+    #num-main-tit {
+        font-size: 27px;
+    }
+    #number-cont > div p {
+        font-size: 17px;
+    }
+    #num-list {
+        gap: 50px;
+    }
+    #num-list li:nth-child(odd) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #num-list li:nth-child(even) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #number-cont {
+        max-width: var(--moWidth);
+    }
+    #num-list li div {
+        width: 100%;
+    }
+    #num-list li #img-sec-1, #num-list li #img-sec-2, #num-list li #img-sec-3, #num-list li #img-sec-4, #num-list li #img-sec-5, #num-list li #img-sec-6 {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    #num-list li div p {
+        padding-top: 25px;
+        border-top: 1px solid #ddd;
+    }
+    #num-list li div div p {
+        padding-top: 0;
+        border-top: none;
+    }
+}
+
+@media all and (max-width:767px) {
+
+}
+
+@media all and (max-width:590px) {
+    #intro-header h1 {
+        font-size: 2.6rem;
+    }
+    #six-center-desc {
+        padding: 7rem 0;
+    }
+    #six-center-tit {
+        margin-bottom: 2.5rem;
+    }
+    #six-center-tit, #six-center-tit strong {
+        font-size: 2.5rem;
+    }
+    #six-center-desc > p {
+        margin-bottom: 2.5rem;
+    }
+    #six-center-desc > p, #six-center-desc > p b {
+        font-size: 1.6rem;
+    }
+    #six-box-cont li p {
+        font-size: 1.7rem;
+    }
+    #six-box-cont li, #six-box-cont li b {
+        font-size: 1.6rem;
+    }
+    #number-cont {
+        max-width: auto;
+    }
+    #number-cont > div {
+        margin-bottom: 4rem;
+    }
+    #num-main-tit {
+        display: none;
+    }
+    #mo-num-main-tit {
+        display: block;
+    }
+    #num-list li #img-sec-1, #num-list li #img-sec-2, #num-list li #img-sec-3, #num-list li #img-sec-4, #num-list li #img-sec-5, #num-list li #img-sec-6 {
+        width: 100%;
+    }
+    #num-list li #img-sec-1 div, #num-list li #img-sec-2 div, #num-list li #img-sec-3 div, #num-list li #img-sec-4 div, #num-list li #img-sec-5 div, #num-list li #img-sec-6 div {
+        padding: 5.5rem 2rem 2.5rem;
+    }
+    #num-list li div div h3 {
+        font-size: 2rem;
+    }
+    #num-list li div strong {
+        font-size: 2rem;
+    }
+    #num-list li div p {
+        font-size: 1.6rem;
+    }
+    #num-list li div pre {
+        color: #222;
+    }
+    #num-list li div p span {
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width:479px) {
+    #six-center-desc {
+        padding: 6rem 0;
+    }
+    #six-box-cont {
+        padding: 3rem 1.5rem;
+    }
+    #six-center-tit, #six-center-tit strong {
+        line-height: 1.3;
+    }
+    #six-box-cont li, #six-box-cont li b {
+        font-size: 1.5rem;
+        word-break: break-all;
+    }
+    #number-cont {
+        padding: 2rem 0 4rem;
+    }
+    #num-list li div div h3 {
+        line-height: 1.3;
+    }
+    #num-list li div strong {
+        font-size: 1.8rem;
+    }
+    #num-list li #img-sec-1 div, #num-list li #img-sec-2 div, #num-list li #img-sec-3 div, #num-list li #img-sec-4 div, #num-list li #img-sec-5 div, #num-list li #img-sec-6 div {
+        padding: 4.5rem 2rem 2.5rem;
+    }
+}
+
+@media all and (max-width:398px) {
+    #six-box-cont li p {
+        margin-bottom: 1rem;
+    }
+    #six-box-cont li h2 {
+        line-height: 1.3;
+        font-size: 2.7rem;
+    }
+    #number-cont > div p {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+    #num-list li div div p {
+        font-size: 1.5rem;
+    }
+    #num-list li div div h3 {
+        font-size: 1.9rem;
+    }
+    #num-list li div strong {
+        word-break: break-all;
+    }
+}

@@ -1,0 +1,596 @@
+/* 공통요소 */
+@font-face {
+    font-family: 'YeongwolTTF-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2507-2@1.0/YeongwolTTF-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --maxWidth: 1400px;
+    --colorOra: #e5b057;
+    --colorMo: #cbb795;
+    --colorRed: #bd1a03;
+    --myeongjo : "Nanum Myeongjo", serif;
+    --pointColor: #955d17;
+    --moWidth: 700px;
+}
+main {
+    padding: 0 15px;
+}
+
+/* about-header */
+#about-header {
+    background: url(../img/intro-header-img.jpg) no-repeat center/cover;
+    padding: 0 15px; height: 300px;
+}
+#about-header h1 {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* about-desc */
+#about-desc {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding: 70px 0;
+}
+#about-tit {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+#mo-about-tit {
+    display: none;
+    line-height: 1.4;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+#about-tit strong {
+    font-size: 35px;
+    color: var(--colorRed);
+}
+#mo-about-tit strong {
+    font-size: 27px;
+    color: var(--colorRed);
+}
+#about-desc > p {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#about-desc > p b {
+    font-size: 19px;
+    color: var(--colorRed);
+    font-weight: 500;
+}
+#about-desc > p span {
+    font-size: 15px;
+    color: #555;
+}
+
+/* about-cont */
+#about-cont,
+#mo-about-cont {
+    padding: 30px 15px;
+    border-top: 3px solid #222;
+    border-bottom: 3px solid #222;
+    text-align: center;
+}
+#mo-about-cont {
+    display: none;
+    border-top: 2px solid #222;
+    border-bottom: 2px solid #222;
+}
+#about-cont pre {
+    font-size: 25px;
+    font-family: var(--myeongjo);
+    line-height: 1.5;
+}
+#mo-about-cont pre {
+    font-family: var(--myeongjo);
+    line-height: 1.5;
+    font-size: 20px;
+}
+#about-cont span {
+    font-family: 'YeongwolTTF-Regular';
+    display: block;
+    text-align: right;
+    font-size: 27px;
+    color: #444;
+    margin-top: 10px;
+}
+#mo-about-cont span{
+    font-family: 'YeongwolTTF-Regular';
+    display: block;
+    font-size: 27px;
+    color: #444;
+    margin-top: 10px;
+}
+#mo-about-cont span b {
+    font-size: 19px;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+/* four-cont-sec */
+#four-cont-sec {
+    padding-bottom: 100px;
+}
+#four-main-tit {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: var(--myeongjo);
+    margin-bottom: 100px;
+    text-align: center;
+}
+#mo-four-main-tit {
+    display: none;
+    line-height: 1.5;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: var(--myeongjo);
+    margin-bottom: 20px;
+    text-align: center;
+}
+#four-cont-sec ul {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+#four-cont-sec ul li {
+    text-align: center;
+}
+#four-cont-sec ul li div p {
+    font-size: 82px;
+    color: rgba(17, 17, 17, 0.1);
+    font-family: 'SeoulHangang';
+    font-weight: 800;
+}
+#four-cont-sec ul li div h3 {
+    font-family: var(--myeongjo);
+    text-align: center;
+    color: var(--colorRed);
+    font-size: 42px;
+    font-weight: 600;
+    margin: -25px 0 20px;
+}
+#four-cont-sec ul li div span {
+    font-size: 21px;
+    font-family: var(--myeongjo);
+    font-weight: 600;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+#four-cont-sec ul li > p {
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 7px;
+    margin-bottom: 45px;
+}
+#four-cont-sec ul li > pre {
+    font-size: 20px;
+    line-height: 1.5;
+}
+#four-cont-sec ul li > pre b {
+    font-size: 20px;
+    color: var(--colorRed);
+}
+#four-cont-sec ul li > pre span {
+    font-size: 14px
+}
+
+/* special-cont */
+#special-cont {
+    text-align: center;
+    position: relative;
+    max-width: var(--maxWidth);
+    margin: 0 auto ;
+}
+#point-tit {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    background: linear-gradient(to bottom, transparent 0 0%, #ecdfc8 0);
+    display: inline-block;
+}
+#mo-point-tit {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.4;
+}
+#point-tit b {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--colorRed);
+}
+#mo-point-tit b {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--colorRed);
+}
+#special-cont ul {
+    text-align: left;
+    border: 1px solid #a8b5c4;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+#special-cont ul li p {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+#special-cont ul li pre {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.7;
+}
+#special-cont ul li pre strong {
+    font-size: 17px;
+    color: #222;
+}
+#special-cont ul li pre b {
+    font-size: 17px;
+    color: #666;
+    display: inline-block;
+    padding-right: 10px;
+}
+#special-cont ul li pre span {
+    font-size: 17px;
+    color: var(--colorRed);
+    font-weight: 500;
+}
+#special-cont #center-more-btn {
+    display: block;
+    position: absolute;
+    right: 30px; bottom: -30px;
+    background: #bd1a03;
+    box-shadow: 5px 5px 16px 0px #888;
+    width: fit-content;
+    padding: 60px 25px 40px;
+    text-align: left;
+    transition: .3s ease-in-out;
+}
+#special-cont #mo-center-more-btn {
+    display: none;
+    position: absolute;
+    left: 50%; bottom: 20px;
+    transform: translateX(-50%);
+    background: #bd1a03;
+    box-shadow: 5px 5px 16px 0px #888;
+    width: fit-content;
+    padding: 30px 80px 30px 15px;
+    text-align: left;
+}
+#special-cont a:hover {
+    background: #da250d;
+}
+#special-cont a i {
+    display: block;
+    position: absolute;
+    right: 10px; top: 10px;
+    background: url(../img/s-logo.png) no-repeat center/contain;
+    width: 30px; height: 30px;
+}
+#special-cont a p {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* last-cont */
+#last-cont {
+    max-width: var(--maxWidth);
+    margin: 130px auto 80px;
+    text-align: center;
+}
+#last-tit {
+    display: inline-block;
+    background: linear-gradient(to bottom, transparent 0 50%, #ecdfc8 0);
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--colorRed);
+    margin-bottom: 40px;
+}
+#mo-last-tit {
+    display: none;
+}
+#last-cont pre {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* 반응형 */
+@media all and (max-width: 1344px) {
+
+}
+
+@media all and (max-width:1290px) {
+    #about-header {
+        height: 250px;
+    }
+    #about-desc > p,
+    #about-desc > p strong {
+        font-size: 18px;
+    }
+    #about-desc > p span {
+        font-size: 14px;
+    }
+    #four-main-tit {
+        font-size: 30px;
+    }
+    #four-cont-sec ul li > p {
+        font-size: 22px;
+    }
+    #four-cont-sec ul li > pre,
+    #four-cont-sec ul li > pre b {
+        font-size: 19px;
+    }
+    #last-cont pre {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width:1155px) {
+
+}
+
+@media all and (max-width:1024px) {
+    #about-header {
+        height: 200px;
+    }
+    #about-header h1 {
+        font-size: 29px;
+    }
+    #about-tit {
+        display: none;
+    }
+    #mo-about-tit {
+        display: block;
+    }
+    #about-cont {
+        display: none;
+    }
+    #mo-about-cont {
+        display: block;
+    }
+    #four-main-tit {
+        display: none;
+    }
+    #mo-four-main-tit {
+        display: block;
+    }
+    #four-cont-sec ul {
+        gap: 0;
+    }
+    #four-cont-sec ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        border-bottom: 1px solid #c1c1c1;
+    }
+    #four-cont-sec ul li:last-child {
+        border-bottom: none;
+        padding: 50px 0 0;
+    }
+    #four-cont-sec ul li div p {
+        font-size: 48px;
+    }
+    #four-cont-sec ul li div h3 {
+        font-size: 32px;
+        margin: -20px 0 20px;
+    }
+    #four-cont-sec ul li div span {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+    #four-cont-sec ul li > p {
+        text-decoration: none;
+        background: linear-gradient(to bottom, transparent 0 0%, #ecdfc8 0);
+        width: fit-content;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    #four-cont-sec ul li > pre, #four-cont-sec ul li > pre b {
+        font-size: 18px;
+    }
+    #special-cont ul {
+        padding: 35px 20px 150px;
+    }
+    #special-cont #center-more-btn {
+        display: none;
+    }
+    #special-cont #mo-center-more-btn {
+        display: block;
+    }
+    #special-cont a p {
+        font-size: 17px;
+    }
+    #special-cont a i {
+        width: 25px; height: 25px;
+    }
+    #point-tit {
+        display: none;
+    }
+    #mo-point-tit {
+        display: block;
+    }
+    #last-tit {
+        font-size: 27px;
+    }
+    #last-cont pre {
+        font-size: 17px;
+    }
+}
+
+@media all and (max-width:767px) {
+
+}
+
+@media all and (max-width:590px) {
+    #about-header h1 {
+        font-size: 2.6rem;
+    }
+    #mo-about-tit,
+    #mo-about-tit strong {
+        font-size: 2.5rem;
+    }
+    #about-desc > p, #about-desc > p strong {
+        font-size: 1.7rem;
+    }
+    #about-desc > p b {
+        font-size: 1.7rem;
+    }
+    #about-desc > p span {
+        font-size: 1.3rem;
+    }
+    #mo-four-main-tit {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+    #four-cont-sec ul li > p {
+        font-size: 1.9rem;
+    }
+    #four-cont-sec ul li > pre, #four-cont-sec ul li > pre b {
+        font-size: 1.6rem;
+    }
+    #four-cont-sec ul li > pre span {
+        font-size: 1.3rem;
+    }
+    #mo-point-tit {
+        font-size: 2.1rem;
+    }
+    #special-cont ul {
+        padding: 3.5rem 1.5rem 15rem;
+    }
+    #special-cont ul li p {
+        margin-bottom: 1rem;
+    }
+    #special-cont ul li pre {
+        font-size: 1.6rem;
+    }
+    #special-cont ul li pre strong {
+        font-size: 1.6rem;
+    }
+    #special-cont ul li pre span {
+        font-size: 1.6rem;
+    }
+    #special-cont #mo-center-more-btn {
+        padding: 2.5rem 1.5rem;
+        width: 65%;
+    }
+    #special-cont a p {
+        font-size: 1.6rem;
+    }
+    #last-cont {
+        margin: 8rem auto 5rem;
+        text-align: left;
+    }
+    #last-tit {
+        font-size: 2.2rem;
+        background: none;
+    }
+    #last-cont pre {
+        font-size: 1.6rem;
+    }
+}
+
+@media all and (max-width:479px) {
+    #mo-about-tit, #mo-about-tit strong {
+        font-size: 2.3rem;
+    }
+    #mo-about-cont pre {
+        font-size: 1.9rem;
+    }
+    #mo-about-cont span {
+        font-size: 2.3rem;
+    }
+    #mo-about-cont span b {
+        font-size: 1.8rem;
+    }
+    #about-desc {
+        padding: 6rem 0;
+    }
+    #mo-four-main-tit {
+        font-size: 2.2rem;
+    }
+    #four-cont-sec {
+        padding-bottom: 7rem;
+    }
+    #four-cont-sec ul li div p {
+        font-size: 3.8rem;
+    }
+    #four-cont-sec ul li div h3 {
+        font-size: 2.6rem;
+        margin: -1.5rem 0 2rem;
+    }
+    #four-cont-sec ul li div span {
+        font-size: 1.7rem;
+        padding-bottom: 3rem;
+    }
+    #four-cont-sec ul li > p {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+    #four-cont-sec ul li > pre, #four-cont-sec ul li > pre b {
+        font-size: 1.5rem;
+    }
+    #mo-point-tit {
+        font-size: 1.8rem;
+    }
+    #mo-point-tit b {
+        font-size: 1.8rem;
+    }
+    #special-cont ul {
+        padding: 3.5rem 1.5rem 13rem;
+    }
+    #special-cont ul li pre {
+        font-size: 1.5rem;
+    }
+    #special-cont ul li pre strong {
+        font-size: 1.5rem;
+    }
+    #special-cont ul li pre span {
+        font-size: 1.5rem;
+    }
+    #special-cont #mo-center-more-btn {
+        width: 80%;
+    }
+    #special-cont a i {
+        width: 2.3rem; height: 2.3rem;
+    }
+    #special-cont a p {
+        font-size: 1.5rem;
+    }
+    #last-tit {
+        font-size: 2rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+    #last-cont pre {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width:398px) {
+}
